@@ -75,7 +75,7 @@ docs/_build/
 target/
 
 # Jupyter Notebook
-.ipynb_checkpoints
+nn_training/.ipynb_checkpoints
 
 # IPython
 profile_default/
@@ -128,5 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-kaggle_simpson_testset/
-simpsons_dataset/
+nn_training/kaggle_simpson_testset/
+nn_training/simpsons_dataset/
