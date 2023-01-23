@@ -1,0 +1,13 @@
+{% extends 'simpsons_app/index.html' %}
+
+{% block names %}
+<h1>Names</h1>
+<ul>
+    {% for i in info %}
+    <li>
+        <h2>{{i.name}}</h2>
+        <img src="{{ i.picture.url }}">
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
