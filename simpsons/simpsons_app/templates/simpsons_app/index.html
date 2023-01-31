@@ -7,16 +7,16 @@
     <link type="text/css"  href="{% static 'simpsons_app/css/styles.css' %}" rel="stylesheet">
 </head>
 <body>
-<div id="main">
 <ul class="list">
     {% for m in menu %}
-    <li><a href="{% url m.url_n %}">{{m.title}}</a></li>
+    <li class="urls"><button><a href="{% url m.url_n %}">{{m.title}}</a></button></li>
     {% endfor %}
 </ul>
-</div>
+<div id="maindec">
 <div id="decor1">
 </div>
 <div id="decor2">
+</div>
 </div>
 {% block content %}
 {% endblock %}

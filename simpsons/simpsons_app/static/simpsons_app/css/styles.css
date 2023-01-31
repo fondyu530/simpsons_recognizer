@@ -1,11 +1,40 @@
-#main {
- margin: 0px auto;
- width: 960px;
+html {
+ background-color: #cccccc;
 }
+
+body {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+
+.urls {
+    border: outset;
+    display: inline;
+    padding: 10% 0 5% 0;
+    background-color: #999999;
+    margin: 0 0 0 0;
+}
+
+
+.list {
+ left: 33%;
+ position: fixed;
+ font-size:35px;
+ margin: 0 0 0 0;
+ padding: 1% 0 0 0;
+ height:
+}
+
+a {
+  text-decoration: none;
+}
+
 
 #decor1 {
  float: left;
- background: url(https://i.pinimg.com/originals/94/55/10/9455109e2859856f83aac721d56ad6c6.jpg) repeat-y;
+ background: url(https://i.pinimg.com/originals/94/55/10/9455109e2859856f83aac721d56ad6c6.jpg);
+ background-repeat: repeat-y;
  height: 700px;
  width: 200px;
 }
@@ -16,7 +45,6 @@
  height: 700px;
  width: 200px;
 
-a {
-  text-decoration: none;
-}
+
+
 
