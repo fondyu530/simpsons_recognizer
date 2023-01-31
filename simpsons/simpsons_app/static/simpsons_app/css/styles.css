@@ -1,3 +1,22 @@
-li {
-
+#main {
+ margin: 0px auto;
+ width: 960px;
 }
+
+#decor1 {
+ float: left;
+ background: url(https://i.pinimg.com/originals/94/55/10/9455109e2859856f83aac721d56ad6c6.jpg) repeat-y;
+ height: 700px;
+ width: 200px;
+}
+
+#decor2 {
+ float: right;
+ background: url(https://i.pinimg.com/originals/94/55/10/9455109e2859856f83aac721d56ad6c6.jpg) repeat-y;
+ height: 700px;
+ width: 200px;
+
+a {
+  text-decoration: none;
+}
+
