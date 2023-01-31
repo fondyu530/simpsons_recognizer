@@ -10,6 +10,8 @@ body {
 
 .urls {
     border: outset;
+    font-size: 25px;
+    font-family: "Arial Narrow", sans-serif;
     display: inline;
     padding: 10% 0 5% 0;
     background-color: #999999;
@@ -18,16 +20,15 @@ body {
 
 
 .list {
- left: 33%;
+ left: 37%;
  position: fixed;
- font-size:35px;
  margin: 0 0 0 0;
  padding: 1% 0 0 0;
- height:
 }
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 
