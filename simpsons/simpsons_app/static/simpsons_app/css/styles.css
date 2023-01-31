@@ -13,16 +13,16 @@ body {
     font-size: 25px;
     font-family: "Arial Narrow", sans-serif;
     display: inline;
-    padding: 10% 0 5% 0;
+    padding: 5% 0 5% 0;
     background-color: #999999;
     margin: 0 0 0 0;
 }
 
 
 .list {
+ top: 0;
  left: 37%;
  position: fixed;
- margin: 0 0 0 0;
  padding: 1% 0 0 0;
 }
 
@@ -33,19 +33,36 @@ a {
 
 
 #decor1 {
- float: left;
- background: url(https://i.pinimg.com/originals/94/55/10/9455109e2859856f83aac721d56ad6c6.jpg);
- background-repeat: repeat-y;
- height: 700px;
+ margin: 0 0 0 0;
+ position: fixed;
+ left: 0;
+ top: 0;
+ height: 378px;
  width: 200px;
 }
 
 #decor2 {
- float: right;
- background: url(https://i.pinimg.com/originals/94/55/10/9455109e2859856f83aac721d56ad6c6.jpg) repeat-y;
- height: 700px;
+ right:0;
+ top: 0;
+ position: fixed;
+ height: 378px;
  width: 200px;
+}
 
+#decor3 {
+ position: fixed;
+ left:0;
+ bottom:0;
+ height: 378px;
+ width: 200px;
+}
 
+#decor4 {
+ right: 0;
+ bottom: 0;
+ position: fixed;
+ height: 378px;
+ width: 200px;
+}
 
 
