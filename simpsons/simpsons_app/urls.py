@@ -4,6 +4,6 @@ from .views import *
 
 urlpatterns = [
     path('', index),
-    path('name', name),
-    path('upload', upload)
+    path('name', name, name='name'),
+    path('upload', upload, name='upload')
 ]

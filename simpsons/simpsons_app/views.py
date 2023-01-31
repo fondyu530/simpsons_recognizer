@@ -4,7 +4,8 @@ from django.http import HttpResponse
 from .models import *
 from .forms import *
 
-menu = ['Pictures uploading', 'Simpsons names']
+menu = [{'title': 'Pictures uploading', 'url_n': 'upload'},
+        {'title': 'Simpsons names', 'url_n': 'name'}]
 
 
 def index(request):
@@ -13,7 +14,7 @@ def index(request):
 
 def name(request):
     info = Simpsons.objects.all()
-    return render(request, 'simpsons_app/names.html',  {'info': info, 'menu': menu, 'title': 'Simpsons names'})
+    return render(request, 'simpsons_app/names.html', {'info': info, 'menu': menu, 'title': 'Simpsons names'})
 
 
 def upload(request):
@@ -22,7 +23,8 @@ def upload(request):
         if form.is_valid():
             form.save()
             img_obj = form.instance
-            return render(request, 'simpsons_app/upload.html', {'menu': menu, 'form': form, 'img_obj': img_obj})
+            return render(request, 'simpsons_app/upload.html', {'menu': menu, 'title': 'Pictures uploading',
+                                                                'form': form, 'img_obj': img_obj})
     else:
         form = PictureForm()
     return render(request, 'simpsons_app/upload.html', {'form': form, 'menu': menu, 'title': 'Simpsons'})

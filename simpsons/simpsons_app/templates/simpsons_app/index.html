@@ -10,7 +10,7 @@
 <body>
 <ul class="list">
     {% for m in menu %}
-    <li>{{m}}</li>
+    <li><a href="{% url m.url_n %}">{{m.title}}</a></li>
     {% endfor %}
 </ul>
 {% block content %}
