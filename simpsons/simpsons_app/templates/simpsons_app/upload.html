@@ -1,15 +1,28 @@
 {% extends 'simpsons_app/index.html' %}
+{% load static %}
+
+{% block style_upload %}
+<link type="text/css"  href="{% static 'simpsons_app/css/upload_styles.css' %}" rel="stylesheet">
+{% endblock %}
 
 {% block content %}
 <h1>Upload</h1>
+<div id="file_upload">
 <form method="post" enctype="multipart/form-data">
   {% csrf_token %}
-   {{ form.as_p }}
-  <button type="submit">Upload</button>
+  <div id="custom-file-input">
+    {{ form.picture }}
+  </div>
+  <div>{{ form.picture.errors }}</div>
+  <button id="submit_but" type="submit">Upload</button>
 </form>
+</div>
+
 
 {% if img_obj %}
+  <div class="succesfully">
   <h3>Succesfully uploaded : {{img_obj.name}}</h3>
-  <img src="{{ img_obj.picture.url}}" alt="connect">
+    <p class="img-center"><img id="uploaded_img" src="{{ img_obj.picture.url}}" alt="connect"></p>
+  </div>
 {% endif %}
 {% endblock %}

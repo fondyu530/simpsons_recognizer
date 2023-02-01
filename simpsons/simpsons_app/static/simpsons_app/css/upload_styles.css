@@ -1,0 +1,39 @@
+#file_upload {
+    height: 50px;
+    width: 50px;
+    margin: 10% 10% auto 33%;
+}
+
+input {
+   border-radius: 5px;
+   outline: none;
+   font-size: 30px;
+   font-family: Tahoma;
+   color: grey;
+}
+
+.succesfully{
+  width: 50%;
+  height:50%;
+  margin-left: 25%;
+}
+
+h3 {
+  font-size: 30px;
+  margin: 5% 10% auto 30%;
+}
+
+#submit_but {
+  font-size: 30px;
+  width: 238px;
+  margin-left: 180%;
+}
+
+#uploaded_img {
+  width: 100%;
+  height: auto;
+}
+
+.img-center{
+  text-aling: center;
+}

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>{{ title }}</title>
     <link type="text/css"  href="{% static 'simpsons_app/css/styles.css' %}" rel="stylesheet">
+    {% block style_upload %}
+    {% endblock %}
 </head>
 <body>
 <ul class="list">
