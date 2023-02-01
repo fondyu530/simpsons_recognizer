@@ -1,7 +1,11 @@
 {% extends 'simpsons_app/index.html' %}
+{% load static %}
+
+{% block style_names %}
+<link type="text/css"  href="{% static 'simpsons_app/css/names_styles.css' %}" rel="stylesheet">
+{% endblock %}
 
 {% block names %}
-<h1>Names</h1>
 <ul>
     {% for i in info %}
     <li>
