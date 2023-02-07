@@ -6,12 +6,16 @@
 {% endblock %}
 
 {% block names %}
-<ul>
+<table>
+    <tbody>
     {% for i in info %}
-    <li>
+    <tr>
+    <td id="pic">
         <h2>{{i.name}}</h2>
         <img src="{{ i.picture.url }}">
-    </li>
+    </td>
+    </tr>
     {% endfor %}
-</ul>
+    </tbody>
+</table>
 {% endblock %}
